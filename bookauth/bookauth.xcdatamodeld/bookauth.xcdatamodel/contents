@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Author" representedClassName="Author" syncable="YES" codeGenerationType="class">
+        <attribute name="anitha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mano" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sabari" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Books" representedClassName="Books" syncable="YES" codeGenerationType="class">
+        <attribute name="bookone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bookthree" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="booktwo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="authors" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Author" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Books" positionX="-380" positionY="-42" width="128" height="105"/>
+        <element name="Author" positionX="-54" positionY="-9" width="128" height="90"/>
+    </elements>
 </model>
